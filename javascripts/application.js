@@ -25,11 +25,10 @@ $( document ).ready(function() {
    ];
 
   var sizeScale = d3.scale.linear().domain([1,73]).range([8,40]);
-  //var colorScale = d3.scale.linear().domain([1,73]).range(d3.scale.category10());
-  var colorScale = d3.scale.category10();
+  var colorScale = d3.scale.linear().domain([1,73]).range(["blue", "red"]);
+  //var colorScale = d3.scale.category10();
 
   function mySort(dataset) {
-    console.log("giladita");
     dataset.sort(
       function compare(a,b) {
         if (a.quantity > b.quantity)
@@ -46,8 +45,12 @@ $( document ).ready(function() {
 
   d3.select(".my-chart").selectAll("span").data(dataset).enter().append("span")
     .text(function(d) { return d.word + " "; })
-    .style("font-size", function(d){ return sizeScale(d.quantity) + "px"; })
-    .color(function(d){return colorScale(d.quantity);});
+    .style({
+      "font-size": function(d){ return sizeScale(d.quantity) + "px"; },
+      "color": function(d){ return colorScale(d.quantity); }
+    });
+
+
 
 
 });
