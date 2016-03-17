@@ -2,7 +2,7 @@
 
 $( document ).ready(function() {
 
-  var url = "https://github.com/jjsebasv/infovis/blob/gh-pages/definitions.txt";
+  var url = "https://raw.githubusercontent.com/jjsebasv/infovis/gh-pages/definitions.txt";
 
   var dataset;
 
@@ -23,16 +23,16 @@ $( document ).ready(function() {
         tmp.push( { "word" : key, "quantity" : wordcnt[key] } );
       }
     }
-
     dataset = tmp.sort( function compare(a, b) {  return b.quantity - a.quantity; } );
+    console.log(dataset[0]);
+    word_cloud();
   });
-
-  word_cloud();
+  console.log(dataset);
   function word_cloud() {
     console.log("something");
     var escala = d3.scale.log().domain([dataset[0].quantity,dataset[dataset.length-1].quantity]).range([40,15]);
     var c10 = d3.scale.category10();
-    d3.select(".my-cloud").selectAll("span").dataset(dataset).enter().append("span")
+    d3.select(".my-cloud").selectAll("span").data(dataset).enter().append("span")
       .text( function(d,i) { return d.word + " "; } )
       .style("font-size", function(d,i) { return escala(d.quantity) + "px";} )
       .style("color", function(d,i) {return c10(i);} );

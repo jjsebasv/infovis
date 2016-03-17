@@ -39,7 +39,9 @@ $(document).ready(function(){
     },
   ];
 
-  var svgContainer = d3.select(".svg-container").append("svg")
+  var svgContainer = d3.select(".svg-container").append("svg").attr("width", 500).attr("height", 1400);
+
+  d3.select(".svg-container svg").selectAll("text").data(wordle_feeling).enter().append("text").text(function(d){d.title});
 
 
 });
