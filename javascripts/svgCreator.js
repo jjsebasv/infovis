@@ -39,9 +39,72 @@ $(document).ready(function(){
     },
   ];
 
-  var svgContainer = d3.select(".svg-container").append("svg").attr("width", 500).attr("height", 1400);
+  var svgTitles = d3.select(".svg-container").append("svg").classed("opinion-titles", true).attr("width", 300).attr("height", 300).attr("text-anchor", "end");
+  var svgBars = d3.select(".svg-container").append("svg").classed("opinion-bars", true).attr("width", 200).attr("height", 300);
 
-  d3.select(".svg-container svg").selectAll("text").data(wordle_feeling).enter().append("text").text(function(d){d.title});
+  wordle_feeling.forEach(function(element, index, array) {
+    // Adding tooltips from http://plnkr.co/edit/JpVkqaZ1AmFdBbOMwMup?p=preview
+
+    var tooltip = d3.select("body")
+	                  .append("div")
+                  	.style({
+                        "position": "absolute",
+                        "z-index": "10",
+                        "visibility": "hidden",
+                        "background-color": "white",
+                        "border": "1px solid #000",
+                        "border-radius": "5px",
+                        "padding": "5px"
+                    });
+
+    svgTitles.selectAll('text')
+    .data(wordle_feeling)
+    .enter()
+    .append('text')
+    .text(function(d) { return d.title; })
+    .style("text-align", "right")
+    .attr("x", 300)
+    .attr("y", function(d,i) { return 10+i*30});
+
+    svgBars.selectAll("bar1")
+    .data(wordle_feeling)
+    .enter()
+    .append("rect")
+    .attr("x", 10)
+    .attr("y", function(d,i) { return i*30})
+    .attr("fill", "green")
+    .attr("width", function(d){return d.agree})
+    .attr("height", 10)
+    .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Agree");})
+	  .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+	  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+    svgBars.selectAll("bar2")
+    .data(wordle_feeling)
+    .enter()
+    .append("rect")
+    .attr("x", function(d){return 10 + d.agree})
+    .attr("y", function(d,i) { return i*30})
+    .attr("fill", "blue")
+    .attr("width", function(d){return d.neutral})
+    .attr("height", 10)
+    .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Neutral");})
+	  .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+	  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+    svgBars.selectAll("bar3")
+    .data(wordle_feeling)
+    .enter()
+    .append("rect")
+    .attr("x", function(d){return 10 + d.agree + d.neutral})
+    .attr("y", function(d,i) { return i*30})
+    .attr("fill", "red")
+    .attr("width", function(d){return d.disagree})
+    .attr("height", 10)
+    .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Disagree");})
+	  .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+	  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+  });
 
 
 });
