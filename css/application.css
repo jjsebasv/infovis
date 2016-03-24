@@ -1,5 +1,111 @@
 
-a {
-  display: block;
+body {
+  height: 85vw;
+  margin: 0;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 80%;
+  -webkit-box-shadow: 0px 16px 17px -5px rgba(50, 50, 50, 0.9);
+  -moz-box-shadow: 0px 16px 17px -5px rgba(50, 50, 50, 0.9);
+  box-shadow: 0px 16px 17px -5px rgba(50, 50, 50, 0.9);
+  margin: 0 10%;
+  line-height: 40px;
+  height: 40px;
+  z-index: 2;
+  background: #e5e5e5;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  border-bottom: 2px solid rgba(33, 125, 255, 0.6);
+}
+
+.footer {
+  padding: 10px 0;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background: #333;
+  color: #e5e5e5;
+}
+
+.footer div,
+.footer a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.github-code img {
+  color: #e5e5e5;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.footer .github-code:hover {
+  font-weight: 800;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  background: url("../assets/background.jpg");
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 15% 5%;
+  padding: 20px 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.content-wrapper.main-wrapper {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.white-bg {
+  content: '';
   width: 100%;
+  height: 80%;
+  position: absolute;
+  transform: skewY(5deg);
+  margin: 10% 0;
+}
+
+.white-bg.main-bg {
+  background: url("../assets/quiet-bg.jpg");
+}
+
+.horizontal-line {
+  content: "";
+  width: 90%;
+  border: 1px solid rgba(33, 125, 255, 0.6);
+  margin: 0 auto;
+}
+
+.index-to-practice {
+  display: inline-block;
+  height: auto;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: rgba(33, 125, 255, 0.6);
+  border: 1px solid rgba(33, 125, 255, 0.6);
+  margin: 5px;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 70px;
+  text-decoration: none;
+  color: white;
+}
+
+.index-to-practice:hover {
+  color: rgba(33, 125, 255, 1);
+  background: transparent;
 }

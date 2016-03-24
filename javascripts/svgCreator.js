@@ -44,18 +44,24 @@ $(document).ready(function(){
 
   wordle_feeling.forEach(function(element, index, array) {
     // Adding tooltips from http://plnkr.co/edit/JpVkqaZ1AmFdBbOMwMup?p=preview
-
-    var tooltip = d3.select("body")
-	                  .append("div")
-                  	.style({
-                        "position": "absolute",
-                        "z-index": "10",
-                        "visibility": "hidden",
-                        "background-color": "white",
-                        "border": "1px solid #000",
-                        "border-radius": "5px",
-                        "padding": "5px"
-                    });
+    /*
+      ** Call this select
+      var tooltip = d3.select("body")
+  	                  .append("div")
+                    	.style({
+                          "position": "absolute",
+                          "z-index": "10",
+                          "visibility": "hidden",
+                          "background-color": "white",
+                          "border": "1px solid #000",
+                          "border-radius": "5px",
+                          "padding": "5px"
+                      });
+      ** Add this to the svg
+      .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Disagree");})
+  	  .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+  	  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+    */
 
     svgTitles.selectAll('text')
     .data(wordle_feeling)
@@ -72,12 +78,10 @@ $(document).ready(function(){
     .append("rect")
     .attr("x", 10)
     .attr("y", function(d,i) { return i*30})
-    .attr("fill", "green")
+    .attr("fill", "#1a9641")
     .attr("width", function(d){return d.agree})
     .attr("height", 10)
-    .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Agree");})
-	  .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
-	  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+    .append("title").text("Agree")
 
     svgBars.selectAll("bar2")
     .data(wordle_feeling)
@@ -85,12 +89,10 @@ $(document).ready(function(){
     .append("rect")
     .attr("x", function(d){return 10 + d.agree})
     .attr("y", function(d,i) { return i*30})
-    .attr("fill", "blue")
+    .attr("fill", "#ffffbf")
     .attr("width", function(d){return d.neutral})
     .attr("height", 10)
-    .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Neutral");})
-	  .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
-	  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+    .append("title").text("Agree")
 
     svgBars.selectAll("bar3")
     .data(wordle_feeling)
@@ -98,12 +100,10 @@ $(document).ready(function(){
     .append("rect")
     .attr("x", function(d){return 10 + d.agree + d.neutral})
     .attr("y", function(d,i) { return i*30})
-    .attr("fill", "red")
+    .attr("fill", "#d7191c")
     .attr("width", function(d){return d.disagree})
     .attr("height", 10)
-    .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Disagree");})
-	  .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
-	  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+    .append("title").text("Agree")
   });
 
 
