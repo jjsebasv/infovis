@@ -92,7 +92,7 @@ $(document).ready(function(){
     .attr("fill", "#ffffbf")
     .attr("width", function(d){return d.neutral})
     .attr("height", 10)
-    .append("title").text("Agree")
+    .append("title").text("Neutral")
 
     svgBars.selectAll("bar3")
     .data(wordle_feeling)
@@ -103,7 +103,7 @@ $(document).ready(function(){
     .attr("fill", "#d7191c")
     .attr("width", function(d){return d.disagree})
     .attr("height", 10)
-    .append("title").text("Agree")
+    .append("title").text("Disagree")
   });
 
 
