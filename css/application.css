@@ -1,8 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
-body {
-  height: 85vw;
-  margin: 0;
+section.main-title {
+  background: url("../assets/background2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  text-align: center;
+  width: 100%;
 }
+
+.title-wrapper {
+  font-family: 'Pacifico', cursive;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #fff;
+  height: calc(100% - 20px);
+  padding: 10px;
+}
+
+.title-wrapper h1 {
+  margin-top: 7vh;
+}
+
+/* Old  */
 
 .nav-bar {
   position: fixed;
