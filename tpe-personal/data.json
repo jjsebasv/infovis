@@ -4,67 +4,83 @@
       "messages":[
          {
             "date":"[21:54, 9/4/2016]",
-            "text":"Siempre!!"
+            "text":"Siempre!!",
+            "relevant": false
          },
          {
             "date":"[21:54, 9/4/2016]",
-            "text":"Son lo más "
+            "text":"Son lo más ",
+            "relevant": false
          },
          {
             "date":"[21:58, 9/4/2016]",
-            "text":"Nos hemos paseado por todas partes "
+            "text":"Nos hemos paseado por todas partes ",
+            "relevant": false
          },
          {
             "date":"[21:59, 9/4/2016]",
-            "text":"Nico y Maimon eran bebés, jaja"
+            "text":"Nico y Maimon eran bebés, jaja",
+            "relevant": false
          },
          {
             "date":"[20:14, 10/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[22:00, 10/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[23:44, 11/4/2016]",
-            "text":"Quě te pasó?"
+            "text":"Quě te pasó?",
+            "relevant": true
          },
          {
             "date":"[23:44, 11/4/2016]",
-            "text":"No vas al cole mañana?"
+            "text":"No vas al cole mañana?",
+            "relevant": true
          },
          {
             "date":"[23:45, 11/4/2016]",
-            "text":"Cuidate y mejorate pronto!! "
+            "text":"Cuidate y mejorate pronto!! ",
+            "relevant": true
          },
          {
             "date":"[23:46, 11/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[13:06, 13/4/2016]",
-            "text":"Ojo que el St Catherine es el de Christine!!! "
+            "text":"Ojo que el St Catherine es el de Christine!!! ",
+            "relevant": true
          },
          {
             "date":"[13:06, 13/4/2016]",
-            "text":"Esos tienen palanca y juegan de locales."
+            "text":"Esos tienen palanca y juegan de locales.",
+            "relevant": true
          },
          {
             "date":"[17:55, 13/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[18:07, 13/4/2016]",
-            "text":"Ya están terminando los chiquitos."
+            "text":"Ya están terminando los chiquitos.",
+            "relevant": true
          },
          {
             "date":"[18:08, 13/4/2016]",
-            "text":"En 5' estamos listos."
+            "text":"En 5' estamos listos.",
+            "relevant": true
          },
          {
             "date":"[19:54, 13/4/2016]",
-            "text":"We\"re still at school. We\"ll see it soon."
+            "text":"We\"re still at school. We\"ll see it soon.",
+            "relevant": true
          }
       ]
    },
@@ -73,103 +89,128 @@
       "messages":[
          {
             "date":"[21:54, 9/4/2016]",
-            "text":"Sí, totalmente! "
+            "text":"Sí, totalmente! ",
+            "relevant": false
          },
          {
             "date":"[22:09, 9/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[20:17, 10/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[20:18, 10/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[20:18, 10/4/2016]",
-            "text":"Quería reírme!"
+            "text":"Quería reírme!",
+            "relevant": false
          },
          {
             "date":"[21:11, 10/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[09:03, 11/4/2016]",
-            "text":"Muy graciosa la foto!"
+            "text":"Muy graciosa la foto!",
+            "relevant": false
          },
          {
             "date":"[09:04, 11/4/2016]",
-            "text":"Recuerden que espero un párrafo durante el día de hoy, con deadline mañana, para la web. Por favor y muchas gracias"
+            "text":"Recuerden que espero un párrafo durante el día de hoy, con deadline mañana, para la web. Por favor y muchas gracias",
+            "relevant": true
          },
          {
             "date":"[13:09, 11/4/2016]",
-            "text":"Gente de 3B: si se pospone torneo Marista, la tarea de Leandro vuelve para mañana como era originalmente. Besos a todos"
+            "text":"Gente de 3B: si se pospone torneo Marista, la tarea de Leandro vuelve para mañana como era originalmente. Besos a todos",
+            "relevant": true
          },
          {
             "date":"[09:08, 12/4/2016]",
-            "text":"Hoy, por favor, necesito su párrafo para subir el artículo a la web. Muchas gracias"
+            "text":"Hoy, por favor, necesito su párrafo para subir el artículo a la web. Muchas gracias",
+            "relevant": true
          },
          {
             "date":"[19:40, 12/4/2016]",
-            "text":"Ya subieron fotos al Facebook de ADA"
+            "text":"Ya subieron fotos al Facebook de ADA",
+            "relevant": true
          },
          {
             "date":"[19:41, 12/4/2016]",
-            "text":"Yo también subí un álbum, si quieren buscarse"
+            "text":"Yo también subí un álbum, si quieren buscarse",
+            "relevant": true
          },
          {
             "date":"[19:50, 12/4/2016]",
-            "text":"Chequea mi Facebook, ahí está"
+            "text":"Chequea mi Facebook, ahí está",
+            "relevant": false
          },
          {
             "date":"[19:50, 12/4/2016]",
-            "text":"Ya subí el artículo a la web"
+            "text":"Ya subí el artículo a la web",
+            "relevant": true
          },
          {
             "date":"[19:50, 12/4/2016]",
-            "text":"Muchas gracias a los que colaboraron! "
+            "text":"Muchas gracias a los que colaboraron! ",
+            "relevant": true
          },
          {
             "date":"[20:00, 12/4/2016]",
-            "text":"Están en deuda...ya me lo cobrare (risa malvada) "
+            "text":"Están en deuda...ya me lo cobrare (risa malvada) ",
+            "relevant": false
          },
          {
             "date":"[20:03, 12/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[21:46, 12/4/2016]",
-            "text":"Todo ok. Una pena. Next time, Fran "
+            "text":"Todo ok. Una pena. Next time, Fran ",
+            "relevant": true
          },
          {
             "date":"[09:13, 13/4/2016]",
-            "text":"Así es"
+            "text":"Así es",
+            "relevant": true
          },
          {
             "date":"[13:10, 13/4/2016]",
-            "text":"Hay que entrenar muuuy duro"
+            "text":"Hay que entrenar muuuy duro",
+            "relevant": true
          },
          {
             "date":"[13:10, 13/4/2016]",
-            "text":"Ustedes pueden!"
+            "text":"Ustedes pueden!",
+            "relevant": true
          },
          {
             "date":"[19:19, 13/4/2016]",
-            "text":"http://www.flo-joe.co.uk/http://www.flo-joe.co.uk/"
+            "text":"http://www.flo-joe.co.uk/http://www.flo-joe.co.uk/",
+            "relevant": true
          },
          {
             "date":"[19:19, 13/4/2016]",
-            "text":"Para Dirri"
+            "text":"Para Dirri",
+            "relevant": false
          },
          {
             "date":"[19:20, 13/4/2016]",
-            "text":"Y aquellos que rindan exámenes internacionales"
+            "text":"Y aquellos que rindan exámenes internacionales",
+            "relevant": true
          },
          {
             "date":"[19:20, 13/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          }
       ]
    },
@@ -178,143 +219,178 @@
       "messages":[
          {
             "date":"[21:55, 9/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[21:58, 9/4/2016]",
-            "text":"Que chiquilines"
+            "text":"Que chiquilines",
+            "relevant": false
          },
          {
             "date":"[21:58, 9/4/2016]",
-            "text":"Yo también"
+            "text":"Yo también",
+            "relevant": false
          },
          {
             "date":"[21:59, 9/4/2016]",
-            "text":"Esa remera verde me desapareció"
+            "text":"Esa remera verde me desapareció",
+            "relevant": false
          },
          {
             "date":"[21:59, 9/4/2016]",
-            "text":"Un misterio"
+            "text":"Un misterio",
+            "relevant": false
          },
          {
             "date":"[23:30, 9/4/2016]",
-            "text":"No invito el sr"
+            "text":"No invito el sr",
+            "relevant": false
          },
          {
             "date":"[13:19, 11/4/2016]",
-            "text":"Que bueno no te perdes el repaso!"
+            "text":"Que bueno no te perdes el repaso!",
+            "relevant": false
          },
          {
             "date":"[13:19, 11/4/2016]",
-            "text":"Debes estar chocho"
+            "text":"Debes estar chocho",
+            "relevant": false
          },
          {
             "date":"[13:19, 11/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[13:20, 11/4/2016]",
-            "text":"Tendrás un 1"
+            "text":"Tendrás un 1",
+            "relevant": false
          },
          {
             "date":"[13:27, 11/4/2016]",
-            "text":"Jajaj don't push it"
+            "text":"Jajaj don't push it",
+            "relevant": false
          },
          {
             "date":"[08:51, 12/4/2016]",
-            "text":"Sebas te hace bulling Juanse"
+            "text":"Sebas te hace bulling Juanse",
+            "relevant": false
          },
          {
             "date":"[08:51, 12/4/2016]",
-            "text":"Defendete"
+            "text":"Defendete",
+            "relevant": false
          },
          {
             "date":"[08:58, 12/4/2016]",
-            "text":"Hay algunas"
+            "text":"Hay algunas",
+            "relevant": false
          },
          {
             "date":"[08:58, 12/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[13:33, 12/4/2016]",
-            "text":"Ya sé cuál decís pero jo me acuerdo"
+            "text":"Ya sé cuál decís pero jo me acuerdo",
+            "relevant": false
          },
          {
             "date":"[09:11, 13/4/2016]",
-            "text":"Cumple años el trima"
+            "text":"Cumple años el trima",
+            "relevant": false
          },
          {
             "date":"[12:06, 13/4/2016]",
-            "text":"El torneo es por zonas"
+            "text":"El torneo es por zonas",
+            "relevant": true
          },
          {
             "date":"[12:06, 13/4/2016]",
-            "text":"Miren la que nos toco "
+            "text":"Miren la que nos toco ",
+            "relevant": true
          },
          {
             "date":"[12:11, 13/4/2016]",
-            "text":"Exacto"
+            "text":"Exacto",
+            "relevant": true
          },
          {
             "date":"[12:11, 13/4/2016]",
-            "text":"Más vale que clasifiquemos"
+            "text":"Más vale que clasifiquemos",
+            "relevant": true
          },
          {
             "date":"[12:12, 13/4/2016]",
-            "text":"Clasifican 2 por grupo supongo"
+            "text":"Clasifican 2 por grupo supongo",
+            "relevant": true
          },
          {
             "date":"[12:12, 13/4/2016]",
-            "text":"Perdón, 4 por grupo"
+            "text":"Perdón, 4 por grupo",
+            "relevant": true
          },
          {
             "date":"[12:15, 13/4/2016]",
-            "text":"No se confíen igual"
+            "text":"No se confíen igual",
+            "relevant": true
          },
          {
             "date":"[12:15, 13/4/2016]",
-            "text":"Ultima semana de abril"
+            "text":"Ultima semana de abril",
+            "relevant": true
          },
          {
             "date":"[13:51, 13/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[16:59, 13/4/2016]",
-            "text":"Donde están!!! "
+            "text":"Donde están!!! ",
+            "relevant": true
          },
          {
             "date":"[16:59, 13/4/2016]",
-            "text":"El equipo de Martinez"
+            "text":"El equipo de Martinez",
+            "relevant": true
          },
          {
             "date":"[18:06, 13/4/2016]",
-            "text":"Ahí subo"
+            "text":"Ahí subo",
+            "relevant": true
          },
          {
             "date":"[18:06, 13/4/2016]",
-            "text":"Preparen todo"
+            "text":"Preparen todo",
+            "relevant": true
          },
          {
             "date":"[18:15, 13/4/2016]",
-            "text":"Vengan los grandes si están"
+            "text":"Vengan los grandes si están",
+            "relevant": true
          },
          {
             "date":"[20:42, 13/4/2016]",
-            "text":"Les digo lo que se hasta ahora pero no está nada definido"
+            "text":"Les digo lo que se hasta ahora pero no está nada definido",
+            "relevant": true
          },
          {
             "date":"[11:06, 14/4/2016]",
-            "text":"Cumple martha casco"
+            "text":"Cumple martha casco",
+            "relevant": false
          },
          {
             "date":"[12:52, 17/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[14:42, 17/4/2016]",
-            "text":"La de la derecha al máximo es vale nicholson?"
+            "text":"La de la derecha al máximo es vale nicholson?",
+            "relevant": false
          }
       ]
    },
@@ -323,131 +399,163 @@
       "messages":[
          {
             "date":"[23:28, 9/4/2016]",
-            "text":"Hoy balbo hace pre debaters para festejar el triunfo"
+            "text":"Hoy balbo hace pre debaters para festejar el triunfo",
+            "relevant": false
          },
          {
             "date":"[20:55, 10/4/2016]",
-            "text":"Próximamente se viene la de balbin"
+            "text":"Próximamente se viene la de balbin",
+            "relevant": false
          },
          {
             "date":"[20:55, 10/4/2016]",
-            "text":"Aunque nose si por juanse"
+            "text":"Aunque nose si por juanse",
+            "relevant": false
          },
          {
             "date":"[21:58, 10/4/2016]",
-            "text":"Jajajajaj"
+            "text":"Jajajajaj",
+            "relevant": false
          },
          {
             "date":"[21:59, 10/4/2016]",
-            "text":"Aburrirte y ponerte a hacer esas cosas"
+            "text":"Aburrirte y ponerte a hacer esas cosas",
+            "relevant": false
          },
          {
             "date":"[21:59, 10/4/2016]",
-            "text":"Sólo vos"
+            "text":"Sólo vos",
+            "relevant": false
          },
          {
             "date":"[21:59, 10/4/2016]",
-            "text":"Se dice que Juanse se fue de joda a festejar con su nuevo team y nos abandono"
+            "text":"Se dice que Juanse se fue de joda a festejar con su nuevo team y nos abandono",
+            "relevant": false
          },
          {
             "date":"[22:25, 10/4/2016]",
-            "text":"Agarrate raian que te saco el puesto"
+            "text":"Agarrate raian que te saco el puesto",
+            "relevant": false
          },
          {
             "date":"[22:25, 10/4/2016]",
-            "text":"Como se escribirá rayn"
+            "text":"Como se escribirá rayn",
+            "relevant": false
          },
          {
             "date":"[07:12, 11/4/2016]",
-            "text":"Me copa la fubda"
+            "text":"Me copa la fubda",
+            "relevant": false
          },
          {
             "date":"[13:18, 11/4/2016]",
-            "text":"según la data que manejo, esta confirmada la suspensión"
+            "text":"según la data que manejo, esta confirmada la suspensión",
+            "relevant": false
          },
          {
             "date":"[13:19, 11/4/2016]",
-            "text":"Me pierdo la prueba campeon!"
+            "text":"Me pierdo la prueba campeon!",
+            "relevant": false
          },
          {
             "date":"[13:19, 11/4/2016]",
-            "text":"Pasa para el 19 el torneo"
+            "text":"Pasa para el 19 el torneo",
+            "relevant": true
          },
          {
             "date":"[13:19, 11/4/2016]",
-            "text":"Manejalo"
+            "text":"Manejalo",
+            "relevant": false
          },
          {
             "date":"[13:21, 11/4/2016]",
-            "text":"Jajajaja"
+            "text":"Jajajaja",
+            "relevant": false
          },
          {
             "date":"[13:22, 11/4/2016]",
-            "text":"No te animas cagonnn"
+            "text":"No te animas cagonnn",
+            "relevant": false
          },
          {
             "date":"[19:44, 12/4/2016]",
-            "text":"Upaa"
+            "text":"Upaa",
+            "relevant": false
          },
          {
             "date":"[19:44, 12/4/2016]",
-            "text":"Dalr"
+            "text":"Dalr",
+            "relevant": false
          },
          {
             "date":"[19:44, 12/4/2016]",
-            "text":"Yo no te pude mandar el parrafito"
+            "text":"Yo no te pude mandar el parrafito",
+            "relevant": true
          },
          {
             "date":"[19:44, 12/4/2016]",
-            "text":"Me bancas hasta más tarde?"
+            "text":"Me bancas hasta más tarde?",
+            "relevant": true
          },
          {
             "date":"[21:09, 12/4/2016]",
-            "text":"Mill perdones! Se me paso"
+            "text":"Mill perdones! Se me paso",
+            "relevant": true
          },
          {
             "date":"[12:11, 13/4/2016]",
-            "text":"San andru esta festejando que no les toca contra nosotros seguro"
+            "text":"San andru esta festejando que no les toca contra nosotros seguro",
+            "relevant": false
          },
          {
             "date":"[12:14, 13/4/2016]",
-            "text":"El que porai es bueno es el sanca no?"
+            "text":"El que porai es bueno es el sanca no?",
+            "relevant": true
          },
          {
             "date":"[12:14, 13/4/2016]",
-            "text":"Claramente boludo"
+            "text":"Claramente boludo",
+            "relevant": false
          },
          {
             "date":"[12:15, 13/4/2016]",
-            "text":"Ahh, mucho más facilll"
+            "text":"Ahh, mucho más facilll",
+            "relevant": true
          },
          {
             "date":"[12:15, 13/4/2016]",
-            "text":"Sisi el international es el choto"
+            "text":"Sisi el international es el choto",
+            "relevant": false
          },
          {
             "date":"[12:15, 13/4/2016]",
-            "text":"Hay fecha para la first round?"
+            "text":"Hay fecha para la first round?",
+            "relevant": true
          },
          {
             "date":"[12:36, 13/4/2016]",
-            "text":"Cuando debatía Alba estaba bueno"
+            "text":"Cuando debatía Alba estaba bueno",
+            "relevant": false
          },
          {
             "date":"[20:40, 13/4/2016]",
-            "text":"Se saben detalles del viaje (fechas, precio, lugares a los que vamos, etc.)? Va a haber reunión?"
+            "text":"Se saben detalles del viaje (fechas, precio, lugares a los que vamos, etc.)? Va a haber reunión?",
+            "relevant": true
          },
          {
             "date":"[20:46, 13/4/2016]",
-            "text":"Okeii"
+            "text":"Okeii",
+            "relevant": true
          },
          {
             "date":"[20:46, 13/4/2016]",
-            "text":"Ni bien sepan más avisen"
+            "text":"Ni bien sepan más avisen",
+            "relevant": true
          },
          {
             "date":"[21:20, 13/4/2016]",
-            "text":"Ai el cuadrito a lo último me mato"
+            "text":"Ai el cuadrito a lo último me mato",
+            "relevant": false
          }
       ]
    },
@@ -456,95 +564,118 @@
       "messages":[
          {
             "date":"[23:34, 9/4/2016]",
-            "text":"A mi tampoco me llego la invite"
+            "text":"A mi tampoco me llego la invite",
+            "relevant": true
          },
          {
             "date":"[21:58, 10/4/2016]",
-            "text":"#GrandeJuan #aiCheSanAndru"
+            "text":"#GrandeJuan #aiCheSanAndru",
+            "relevant": false
          },
          {
             "date":"[21:58, 10/4/2016]",
-            "text":"Tendrian qué haber visto el moment qué tuvieron Juan y su nuevo mejor amigo alejo cuando ganaron"
+            "text":"Tendrian qué haber visto el moment qué tuvieron Juan y su nuevo mejor amigo alejo cuando ganaron",
+            "relevant": false
          },
          {
             "date":"[21:59, 10/4/2016]",
-            "text":"Si, pero esa es más graciosa"
+            "text":"Si, pero esa es más graciosa",
+            "relevant": false
          },
          {
             "date":"[22:00, 10/4/2016]",
-            "text":"Ojota con esas jodas eh"
+            "text":"Ojota con esas jodas eh",
+            "relevant": false
          },
          {
             "date":"[22:00, 10/4/2016]",
-            "text":"Uno nunca sabe con que te van a salir (cuando pedís una tarjeta para chequear que tus alumnos estén vivos)"
+            "text":"Uno nunca sabe con que te van a salir (cuando pedís una tarjeta para chequear que tus alumnos estén vivos)",
+            "relevant": false
          },
          {
             "date":"[06:49, 11/4/2016]",
-            "text":"De quien es eso?"
+            "text":"De quien es eso?",
+            "relevant": true
          },
          {
             "date":"[06:53, 11/4/2016]",
-            "text":"La tiene alfonso"
+            "text":"La tiene alfonso",
+            "relevant": true
          },
          {
             "date":"[08:45, 11/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[08:51, 12/4/2016]",
-            "text":"Fucking priceless"
+            "text":"Fucking priceless",
+            "relevant": false
          },
          {
             "date":"[09:00, 12/4/2016]",
-            "text":"Han crecido "
+            "text":"Han crecido ",
+            "relevant": false
          },
          {
             "date":"[13:31, 12/4/2016]",
-            "text":"Como se llamaba el pibe este rubio qué estuvo en México?"
+            "text":"Como se llamaba el pibe este rubio qué estuvo en México?",
+            "relevant": false
          },
          {
             "date":"[13:31, 12/4/2016]",
-            "text":"Qué debatió para Argentina"
+            "text":"Qué debatió para Argentina",
+            "relevant": false
          },
          {
             "date":"[13:31, 12/4/2016]",
-            "text":"(qué yo decía que se parecía a uno de los Duffy)"
+            "text":"(qué yo decía que se parecía a uno de los Duffy)",
+            "relevant": false
          },
          {
             "date":"[13:56, 12/4/2016]",
-            "text":"Ese!"
+            "text":"Ese!",
+            "relevant": false
          },
          {
             "date":"[13:56, 12/4/2016]",
-            "text":"Estudia en el itba"
+            "text":"Estudia en el itba",
+            "relevant": false
          },
          {
             "date":"[13:56, 12/4/2016]",
-            "text":"Me lo acabo de cruzar"
+            "text":"Me lo acabo de cruzar",
+            "relevant": false
          },
          {
             "date":"[13:57, 12/4/2016]",
-            "text":"Sabia que me ibas a decir eao"
+            "text":"Sabia que me ibas a decir eao",
+            "relevant": false
          },
          {
             "date":"[13:57, 12/4/2016]",
-            "text":"Ya se lo mande, te manda otro"
+            "text":"Ya se lo mande, te manda otro",
+            "relevant": false
          },
          {
             "date":"[14:00, 12/4/2016]",
-            "text":"What happens in Mexico..."
+            "text":"What happens in Mexico...",
+            "relevant": false
          },
          {
             "date":"[12:36, 13/4/2016]",
-            "text":"Después me dicen a mi"
+            "text":"Después me dicen a mi",
+            "relevant": false
          },
          {
             "date":"[13:21, 13/4/2016]",
-            "text":"Maggie y Ro son ex Quilmes"
+            "text":"Maggie y Ro son ex Quilmes",
+            "relevant": true
          },
          {
             "date":"[13:21, 13/4/2016]",
-            "text":"Y hay colegios qué no tengo idea ni quienes son"
+            "text":"Y hay colegios qué no tengo idea ni quienes son",
+            "relevant": true
          }
       ]
    },
@@ -553,91 +684,113 @@
       "messages":[
          {
             "date":"[23:37, 9/4/2016]",
-            "text":"Esta solo aparte"
+            "text":"Esta solo aparte",
+            "relevant": false
          },
          {
             "date":"[22:01, 10/4/2016]",
-            "text":"Ah ah ah"
+            "text":"Ah ah ah",
+            "relevant": false
          },
          {
             "date":"[23:43, 11/4/2016]",
-            "text":"Miriam"
+            "text":"Miriam",
+            "relevant": false
          },
          {
             "date":"[23:43, 11/4/2016]",
-            "text":"Estoy en el hospital esperando hacerme una resonancia"
+            "text":"Estoy en el hospital esperando hacerme una resonancia",
+            "relevant": false
          },
          {
             "date":"[23:43, 11/4/2016]",
-            "text":"Tengo hasta la 1"
+            "text":"Tengo hasta la 1",
+            "relevant": false
          },
          {
             "date":"[23:44, 11/4/2016]",
-            "text":"Hice la preséntation y le di el pen drive"
+            "text":"Hice la preséntation y le di el pen drive",
+            "relevant": false
          },
          {
             "date":"[23:44, 11/4/2016]",
-            "text":"A mis partners"
+            "text":"A mis partners",
+            "relevant": false
          },
          {
             "date":"[23:44, 11/4/2016]",
-            "text":"Disfrutala"
+            "text":"Disfrutala",
+            "relevant": false
          },
          {
             "date":"[23:44, 11/4/2016]",
-            "text":"Por el tobillo a ver si puedo volver"
+            "text":"Por el tobillo a ver si puedo volver",
+            "relevant": false
          },
          {
             "date":"[23:45, 11/4/2016]",
-            "text":"No creo"
+            "text":"No creo",
+            "relevant": false
          },
          {
             "date":"[23:45, 11/4/2016]",
-            "text":"Me dijieron que están atrasados"
+            "text":"Me dijieron que están atrasados",
+            "relevant": false
          },
          {
             "date":"[23:45, 11/4/2016]",
-            "text":"Pero la hice es sobre los autos Volvo que se manejan solos"
+            "text":"Pero la hice es sobre los autos Volvo que se manejan solos",
+            "relevant": false
          },
          {
             "date":"[23:45, 11/4/2016]",
-            "text":"Una obra de arte"
+            "text":"Una obra de arte",
+            "relevant": false
          },
          {
             "date":"[13:57, 12/4/2016]",
-            "text":"Ese casi se va a las piñas con Laurence"
+            "text":"Ese casi se va a las piñas con Laurence",
+            "relevant": false
          },
          {
             "date":"[13:57, 12/4/2016]",
-            "text":"En la fiesta de cierre de Méx"
+            "text":"En la fiesta de cierre de Méx",
+            "relevant": false
          },
          {
             "date":"[13:58, 12/4/2016]",
-            "text":"Yo estaba presente"
+            "text":"Yo estaba presente",
+            "relevant": false
          },
          {
             "date":"[12:11, 13/4/2016]",
-            "text":"Es más fácil el grupo"
+            "text":"Es más fácil el grupo",
+            "relevant": true
          },
          {
             "date":"[12:11, 13/4/2016]",
-            "text":"Nuestro que el otro"
+            "text":"Nuestro que el otro",
+            "relevant": true
          },
          {
             "date":"[13:42, 13/4/2016]",
-            "text":"No importa el resto"
+            "text":"No importa el resto",
+            "relevant": true
          },
          {
             "date":"[13:43, 13/4/2016]",
-            "text":"De nosotros depende el resultado nos vemos hoy a las 4 30"
+            "text":"De nosotros depende el resultado nos vemos hoy a las 4 30",
+            "relevant": true
          },
          {
             "date":"[13:43, 13/4/2016]",
-            "text":"Gracias"
+            "text":"Gracias",
+            "relevant": true
          },
          {
             "date":"[14:36, 17/4/2016]",
-            "text":"Que banda pesada"
+            "text":"Que banda pesada",
+            "relevant": false
          }
       ]
    },
@@ -646,19 +799,23 @@
       "messages":[
          {
             "date":"[23:39, 9/4/2016]",
-            "text":"Dice q lleven sindor"
+            "text":"Dice q lleven sindor",
+            "relevant": false
          },
          {
             "date":"[23:39, 9/4/2016]",
-            "text":"*cindor"
+            "text":"*cindor",
+            "relevant": false
          },
          {
             "date":"[12:52, 13/4/2016]",
-            "text":"Y cuando lo sepas pasalo"
+            "text":"Y cuando lo sepas pasalo",
+            "relevant": false
          },
          {
             "date":"[13:18, 13/4/2016]",
-            "text":"Yo hoy no puedo ir, tengo q ir al medico a sacar la ficha para el gimnasio"
+            "text":"Yo hoy no puedo ir, tengo q ir al medico a sacar la ficha para el gimnasio",
+            "relevant": true
          }
       ]
    },
@@ -667,31 +824,38 @@
       "messages":[
          {
             "date":"[21:59, 10/4/2016]",
-            "text":"No había otra foto más ?"
+            "text":"No había otra foto más ?",
+            "relevant": false
          },
          {
             "date":"[20:01, 12/4/2016]",
-            "text":"Perdón cose yo también me colgué"
+            "text":"Perdón cose yo también me colgué",
+            "relevant": true
          },
          {
             "date":"[20:01, 12/4/2016]",
-            "text":"Para la próxima "
+            "text":"Para la próxima ",
+            "relevant": true
          },
          {
             "date":"[20:02, 12/4/2016]",
-            "text":"Jose*"
+            "text":"Jose*",
+            "relevant": true
          },
          {
             "date":"[20:41, 13/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[21:18, 13/4/2016]",
-            "text":"Cuantos equipos debaten por categoría ?"
+            "text":"Cuantos equipos debaten por categoría ?",
+            "relevant": true
          },
          {
             "date":"[21:21, 13/4/2016]",
-            "text":"Jajajaj"
+            "text":"Jajajaj",
+            "relevant": false
          }
       ]
    },
@@ -700,55 +864,68 @@
       "messages":[
          {
             "date":"[22:00, 10/4/2016]",
-            "text":"Dicen que recibió una oferta millonaria del sanandrus"
+            "text":"Dicen que recibió una oferta millonaria del sanandrus",
+            "relevant": false
          },
          {
             "date":"[13:35, 12/4/2016]",
-            "text":"Michael taylor"
+            "text":"Michael taylor",
+            "relevant": false
          },
          {
             "date":"[13:35, 12/4/2016]",
-            "text":"Maricon"
+            "text":"Maricon",
+            "relevant": false
          },
          {
             "date":"[13:56, 12/4/2016]",
-            "text":"Mandale un beso enorme!"
+            "text":"Mandale un beso enorme!",
+            "relevant": false
          },
          {
             "date":"[13:59, 12/4/2016]",
-            "text":"Tuvo suerte"
+            "text":"Tuvo suerte",
+            "relevant": false
          },
          {
             "date":"[17:30, 12/4/2016]",
-            "text":"Alguno/a de tercer año seria tan amable de prestarme el apunte de semana santa de trimarchi?"
+            "text":"Alguno/a de tercer año seria tan amable de prestarme el apunte de semana santa de trimarchi?",
+            "relevant": false
          },
          {
             "date":"[17:30, 12/4/2016]",
-            "text":"Tengo prueba de eso el viernes"
+            "text":"Tengo prueba de eso el viernes",
+            "relevant": false
          },
          {
             "date":"[17:39, 12/4/2016]",
-            "text":"Gracias joven guelfo"
+            "text":"Gracias joven guelfo",
+            "relevant": false
          },
          {
             "date":"[12:29, 13/4/2016]",
-            "text":"Cuando debatia alba era bueno"
+            "text":"Cuando debatia alba era bueno",
+            "relevant": false
          },
          {
             "date":"[12:29, 13/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[13:31, 13/4/2016]",
-            "text":"Martin buber eran un desastre"
+            "text":"Martin buber eran un desastre",
+            "relevant": true
          },
          {
             "date":"[13:31, 13/4/2016]",
-            "text":"El resto ni idea"
+            "text":"El resto ni idea",
+            "relevant": false
          },
          {
             "date":"[14:35, 17/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          }
       ]
    },
@@ -757,7 +934,8 @@
       "messages":[
          {
             "date":"[22:25, 10/4/2016]",
-            "text":"Ryan"
+            "text":"Ryan",
+            "relevant": false
          }
       ]
    },
@@ -766,55 +944,68 @@
       "messages":[
          {
             "date":"[22:26, 10/4/2016]",
-            "text":"\"Raian\" "
+            "text":"\"Raian\" ",
+            "relevant": false
          },
          {
             "date":"[08:17, 11/4/2016]",
-            "text":"Me copan los pantalones sebas"
+            "text":"Me copan los pantalones sebas",
+            "relevant": false
          },
          {
             "date":"[13:18, 11/4/2016]",
-            "text":"Idem fran"
+            "text":"Idem fran",
+            "relevant": false
          },
          {
             "date":"[23:52, 11/4/2016]",
-            "text":"Que tranfuga asqueroso"
+            "text":"Que tranfuga asqueroso",
+            "relevant": false
          },
          {
             "date":"[13:55, 12/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[17:38, 12/4/2016]",
-            "text":"Yo t lo doy nicolo"
+            "text":"Yo t lo doy nicolo",
+            "relevant": false
          },
          {
             "date":"[17:39, 12/4/2016]",
-            "text":"De nada"
+            "text":"De nada",
+            "relevant": false
          },
          {
             "date":"[09:14, 13/4/2016]",
-            "text":"Grax"
+            "text":"Grax",
+            "relevant": false
          },
          {
             "date":"[12:35, 13/4/2016]",
-            "text":"No conocen a alba ! "
+            "text":"No conocen a alba ! ",
+            "relevant": false
          },
          {
             "date":"[12:35, 13/4/2016]",
-            "text":"El primer gran amor de manuel"
+            "text":"El primer gran amor de manuel",
+            "relevant": false
          },
          {
             "date":"[12:49, 13/4/2016]",
-            "text":"Averigualo solo"
+            "text":"Averigualo solo",
+            "relevant": false
          },
          {
             "date":"[13:41, 13/4/2016]",
-            "text":"El southern era malo"
+            "text":"El southern era malo",
+            "relevant": true
          },
          {
             "date":"[14:50, 17/4/2016]",
-            "text":"Jajaja nico"
+            "text":"Jajaja nico",
+            "relevant": false
          }
       ]
    },
@@ -823,7 +1014,8 @@
       "messages":[
          {
             "date":"[06:51, 11/4/2016]",
-            "text":"Bruna"
+            "text":"Bruna",
+            "relevant": true
          }
       ]
    },
@@ -832,7 +1024,8 @@
       "messages":[
          {
             "date":"[06:55, 11/4/2016]",
-            "text":"gracias"
+            "text":"gracias",
+            "relevant": true
          }
       ]
    },
@@ -841,15 +1034,18 @@
       "messages":[
          {
             "date":"[17:37, 12/4/2016]",
-            "text":"Posible prueba"
+            "text":"Posible prueba",
+            "relevant": true
          },
          {
             "date":"[17:37, 12/4/2016]",
-            "text":"No tengo el apunte"
+            "text":"No tengo el apunte",
+            "relevant": false
          },
          {
             "date":"[17:22, 13/4/2016]",
-            "text":"Perdón que no puedo ir"
+            "text":"Perdón que no puedo ir",
+            "relevant": true
          }
       ]
    },
@@ -858,7 +1054,8 @@
       "messages":[
          {
             "date":"[17:56, 12/4/2016]",
-            "text":"La prueba es la misma que la de tercero"
+            "text":"La prueba es la misma que la de tercero",
+            "relevant": false
          }
       ]
    },
@@ -867,11 +1064,13 @@
       "messages":[
          {
             "date":"[17:59, 12/4/2016]",
-            "text":"Porque se me hace tann lejos todo??"
+            "text":"Porque se me hace tann lejos todo??",
+            "relevant": false
          },
          {
             "date":"[18:00, 12/4/2016]",
-            "text":"Estoy vieja"
+            "text":"Estoy vieja",
+            "relevant": false
          }
       ]
    },
@@ -880,71 +1079,88 @@
       "messages":[
          {
             "date":"[19:48, 12/4/2016]",
-            "text":"Como es el face de la ada josefina??"
+            "text":"Como es el face de la ada josefina??",
+            "relevant": true
          },
          {
             "date":"[19:48, 12/4/2016]",
-            "text":"Porque no me aparece"
+            "text":"Porque no me aparece",
+            "relevant": true
          },
          {
             "date":"[12:29, 13/4/2016]",
-            "text":"Jajaja"
+            "text":"Jajaja",
+            "relevant": false
          },
          {
             "date":"[12:29, 13/4/2016]",
-            "text":"Quien es alba??"
+            "text":"Quien es alba??",
+            "relevant": false
          },
          {
             "date":"[12:29, 13/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          },
          {
             "date":"[12:40, 13/4/2016]",
-            "text":"Alba cuanto el apellido de la mina??"
+            "text":"Alba cuanto el apellido de la mina??",
+            "relevant": false
          },
          {
             "date":"[13:13, 13/4/2016]",
-            "text":"Che hay una del st caterine que dabtio cn migo"
+            "text":"Che hay una del st caterine que dabtio cn migo",
+            "relevant": true
          },
          {
             "date":"[13:13, 13/4/2016]",
-            "text":"Alguien sabe como se llamaba??"
+            "text":"Alguien sabe como se llamaba??",
+            "relevant": false
          },
          {
             "date":"[13:13, 13/4/2016]",
-            "text":"Oli algo era"
+            "text":"Oli algo era",
+            "relevant": false
          },
          {
             "date":"[13:13, 13/4/2016]",
-            "text":"Pero no me acuerdo"
+            "text":"Pero no me acuerdo",
+            "relevant": false
          },
          {
             "date":"[19:20, 13/4/2016]",
-            "text":"Graciass"
+            "text":"Graciass",
+            "relevant": false
          },
          {
             "date":"[14:37, 17/4/2016]",
-            "text":"Che ayer vi a ryan pelotudeando por el recoleta mall"
+            "text":"Che ayer vi a ryan pelotudeando por el recoleta mall",
+            "relevant": false
          },
          {
             "date":"[14:37, 17/4/2016]",
-            "text":"Me clavo alta cara de orto"
+            "text":"Me clavo alta cara de orto",
+            "relevant": false
          },
          {
             "date":"[14:37, 17/4/2016]",
-            "text":"Ni idea"
+            "text":"Ni idea",
+            "relevant": false
          },
          {
             "date":"[15:03, 17/4/2016]",
-            "text":"Sabes que ahora que lo pienso"
+            "text":"Sabes que ahora que lo pienso",
+            "relevant": false
          },
          {
             "date":"[15:03, 17/4/2016]",
-            "text":"Puede ser"
+            "text":"Puede ser",
+            "relevant": false
          },
          {
             "date":"[15:03, 17/4/2016]",
-            "text":"Siempre con la posta nico"
+            "text":"Siempre con la posta nico",
+            "relevant": false
          }
       ]
    },
@@ -953,19 +1169,23 @@
       "messages":[
          {
             "date":"[19:59, 12/4/2016]",
-            "text":"Uh quede en la misma que Fran"
+            "text":"Uh quede en la misma que Fran",
+            "relevant": true
          },
          {
             "date":"[17:53, 13/4/2016]",
-            "text":"Nosotros estamos en biología"
+            "text":"Nosotros estamos en biología",
+            "relevant": true
          },
          {
             "date":"[21:28, 13/4/2016]",
-            "text":"Ya está el draw de con quien debatimos ??"
+            "text":"Ya está el draw de con quien debatimos ??",
+            "relevant": true
          },
          {
             "date":"[14:36, 17/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          }
       ]
    },
@@ -974,7 +1194,8 @@
       "messages":[
          {
             "date":"[16:36, 13/4/2016]",
-            "text":"No voy"
+            "text":"No voy",
+            "relevant": true
          }
       ]
    },
@@ -983,7 +1204,8 @@
       "messages":[
          {
             "date":"[20:46, 13/4/2016]",
-            "text":""
+            "text":"",
+            "relevant": false
          }
       ]
    },
@@ -992,7 +1214,8 @@
       "messages":[
          {
             "date":"[12:17, 14/4/2016]",
-            "text":"Ok"
+            "text":"Ok",
+            "relevant": true
          }
       ]
    },
@@ -1001,7 +1224,8 @@
       "messages":[
          {
             "date":"[14:44, 17/4/2016]",
-            "text":"Tiene miedo que le saques el puesto Dirri"
+            "text":"Tiene miedo que le saques el puesto Dirri",
+            "relevant": false
          }
       ]
    }
