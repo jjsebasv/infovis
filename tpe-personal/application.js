@@ -8,6 +8,16 @@ $( document ).ready(function() {
     window.open(url, '_blank');
     window.focus();
   };
+  relevants = {
+    "key": "Relevants",
+    "color": "#d67777",
+    "values": []
+  };
+  irrelevants = {
+    "key": "Irrelevants",
+    "color": "#4f99b4",
+    "values": []
+  };
 
   d3.json("https://raw.githubusercontent.com/jjsebasv/infovis/gh-pages/tpe-personal/data.json", function(json) {
     for (var data in json) {
@@ -17,6 +27,7 @@ $( document ).ready(function() {
         "irrelevant": 0,
         "total": 0
       };
+
       $.each(json[data].messages, function(){
         if ($(this)[0].relevant) {
           aux.relevant ++;
@@ -26,13 +37,22 @@ $( document ).ready(function() {
         aux.total ++;
       });
       relevancy.push(aux);
+      relevants.values.push({
+        "label": data,
+        "value": aux.relevant
+      });
+      irrelevants.values.push({
+        "label": data,
+        "value": aux.irrelevant
+      });
     };
     console.log(relevancy);
+    doubleBar = [relevants, irrelevants];
     svgFunction(relevancy);
-    getJson(relevancy);
+    getJson(doubleBar);
   });
 
-  d3.json('multiBarHorizontalData.json', function(data) {
+  d3.json('https://raw.githubusercontent.com/jjsebasv/infovis/gh-pages/tpe-personal/relevancy.json', function(data) {
     nv.addGraph(function() {
       var chart = nv.models.multiBarHorizontalChart()
           .x(function(d) { return d.label })
