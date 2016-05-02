@@ -1,0 +1,135 @@
+{
+  {
+    "author":"Miriam Ozores",
+    "relevant":8,
+    "irrelevant":8,
+    "total":16
+
+  },
+  {
+    "author":"Josefina Blanco",
+    "relevant":13,
+    "irrelevant":12,
+    "total":25
+  },
+  {
+    "author":"Manu Lopez",
+    "relevant":14,
+    "irrelevant":21,
+    "total":35
+  },
+  {
+    "author":"Fran Garcia Weiss",
+    "relevant":10,
+    "irrelevant":22,
+    "total":32
+  },
+  {
+    "author":"+54 9 11 6731-8007",
+    "relevant":5,
+    "irrelevant":18,
+    "total":23
+  },
+  {
+    "author":"Maimon López Asaro",
+    "relevant":5,
+    "irrelevant":17,
+    "total":22
+  },
+  {
+    "author":"+54 9 11 2402-6690",
+    "relevant":1,
+    "irrelevant":3,
+    "total":4
+  },
+  {
+    "author":"Agus Cianciarullo",
+    "relevant":4,
+    "irrelevant":3,
+    "total":7
+  },
+  {
+    "author":"Nico Laurence",
+    "relevant":1,
+    "irrelevant":12,
+    "total":13
+  },
+  {
+    "author":"Tomi Gil",
+    "relevant":0,
+    "irrelevant":1,
+    "total":1
+  },
+  {
+    "author":"Franco Guelfo",
+    "relevant":1,
+    "irrelevant":12,
+    "total":13
+  },
+  {
+    "author":"Magdalena Urriolabeitia",
+    "relevant":1,
+    "irrelevant":0,
+    "total":1
+  },
+  {
+    "author":"Bruna",
+    "relevant":1,
+    "irrelevant":0,
+    "total":1
+  },
+  {
+    "author":"Agustín Martinez Cereijo",
+    "relevant":2,
+    "irrelevant":1,
+    "total":3
+  },
+  {
+    "author":"Mili Morris",
+    "relevant":0,
+    "irrelevant":1,
+    "total":1
+  },
+  {
+    "author":"Camila Cagliero",
+    "relevant":0,
+    "irrelevant":2,
+    "total":2
+  },
+  {
+    "author":"Francisco Dirrado",
+    "relevant":3,
+    "irrelevant":14,
+    "total":17
+  },
+  {
+    "author":"Juan 2 Balbin",
+    "relevant":3,
+    "irrelevant":1,
+    "total":4
+  },
+  {
+    "author":"Juan Cruz Hernandez",
+    "relevant":1,
+    "irrelevant":0,
+    "total":1
+  },
+  {
+    "author":"Gonzalo Cornejo",
+    "relevant":0,
+    "irrelevant":1,
+    "total":1
+  },
+  {
+    "author":"Tony Lopez",
+    "relevant":1,
+    "irrelevant":0,
+    "total":1
+  },
+  {
+    "author":"Nico Martínez Cereijo",
+    "relevant":0,
+    "irrelevant":1,
+    "total":1
+  }
+}
