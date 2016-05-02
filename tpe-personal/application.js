@@ -19,6 +19,21 @@ $( document ).ready(function() {
     "values": []
   };
 
+  multiBar = [
+    {
+      "key": "Relevant",
+      "values": []
+    },
+    {
+      "key": "Irrelevant",
+      "values": []
+    },
+    {
+      "key": "Total",
+      "values": []
+    }
+  ];
+
   d3.json("https://raw.githubusercontent.com/jjsebasv/infovis/gh-pages/tpe-personal/data.json", function(json) {
     for (var data in json) {
       aux = {
@@ -37,6 +52,7 @@ $( document ).ready(function() {
         aux.total ++;
       });
       relevancy.push(aux);
+
       relevants.values.push({
         "label": data,
         "value": aux.relevant
@@ -45,13 +61,41 @@ $( document ).ready(function() {
         "label": data,
         "value": aux.irrelevant
       });
+
+      multiBar[0].values.push({
+        "label": data,
+        "value": aux.relevant
+      });
+      multiBar[1].values.push({
+        "label": data,
+        "value": - aux.irrelevant
+      });
+
     };
     console.log(relevancy);
     doubleBar = [relevants, irrelevants];
     svgFunction(relevancy);
-    getJson(doubleBar);
+    //getJson(doubleBar);
+    nv.addGraph(function() {
+      var chart = nv.models.discreteBarChart()
+          .x(function(d) { return d.label })    //Specify the data accessors.
+          .y(function(d) { return d.value })
+          .staggerLabels(true)    //Too many bars and not enough room? Try staggering labels.
+          .showValues(true)       //...instead, show the bar value right on top of each bar.
+          ;
+      chart.tooltip.enabled();
+
+      d3.select('#chart1 svg')
+          .datum(multiBar)
+          .call(chart);
+
+      nv.utils.windowResize(chart.update);
+
+      return chart;
+    });
   });
 
+/*
   d3.json('https://raw.githubusercontent.com/jjsebasv/infovis/gh-pages/tpe-personal/relevancy.json', function(data) {
     nv.addGraph(function() {
       var chart = nv.models.multiBarHorizontalChart()
@@ -60,8 +104,9 @@ $( document ).ready(function() {
           .margin({top: 30, right: 20, bottom: 50, left: 175})
           .showValues(true)           //Show bar value next to each bar.
           .tooltips(true)             //Show tooltips on hover.
-          .transitionDuration(350)
-          .showControls(true);        //Allow user to switch between "Grouped" and "Stacked" mode.
+          .showControls(true)         //Allow user to switch between "Grouped" and "Stacked" mode.
+          .width(500)
+          .height(900);
 
       chart.yAxis
           .tickFormat(d3.format(',.2f'));
@@ -71,11 +116,10 @@ $( document ).ready(function() {
           .call(chart);
 
       nv.utils.windowResize(chart.update);
-
       return chart;
     });
   });
-
+*/
   var svgFunction = function(my_dataset){
     var svgTitles = d3.select(".svg-container").append("svg").classed("opinion-titles", true).attr("width", 300).attr("height", 800).attr("text-anchor", "end");
     var svgBars = d3.select(".svg-container").append("svg").classed("opinion-bars", true).attr("width", 150).attr("height", 800);

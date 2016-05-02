@@ -1,7 +1,7 @@
 [
    {
       "key":"Relevants",
-      "color":"#d67777",
+      "color":"#4f99b4",
       "values":[
          {
             "label":"Miriam Ozores",
@@ -95,7 +95,7 @@
    },
    {
       "key":"Irrelevants",
-      "color":"#4f99b4",
+      "color":"#d67777",
       "values":[
          {
             "label":"Miriam Ozores",
