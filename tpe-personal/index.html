@@ -4,12 +4,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script src="nvd3.js" charset="utf-8"></script>
+  <script src="c3.js" charset="utf-8"></script>
+  <script src="gauge.js" charset="utf-8"></script>
+  <script src="stacked-bar.js" charset="utf-8"></script>
+  <script src="sorter.js" charset="utf-8"></script>
   <script src="application.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="css/nvd3.css">
+  <link rel="stylesheet" type="text/css" href="css/c3.css">
   <body>
-    <div class="svg-container">
+    <div id="gauge">
+      <svg></svg>
     </div>
-    <div id="chart1">
-      <svg style="width:1500px; height:900px"></svg>
+    <div id="stacked-bar">
+      <svg></svg>
+    </div> 
+    <div class="group-button">
+      <button id="name"> Sort By Name </button>
+      <button id="total"> Sort By Total </button>
+      <button id="relevant"> Sort By Relevancy </button>
+      <button id="irrelevant"> Sort By Irrelevancy </button>
     </div>
 
   </body>

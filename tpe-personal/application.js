@@ -8,36 +8,16 @@ $( document ).ready(function() {
     window.open(url, '_blank');
     window.focus();
   };
-  relevants = {
-    "key": "Relevants",
-    "color": "#d67777",
-    "values": []
-  };
-  irrelevants = {
-    "key": "Irrelevants",
-    "color": "#4f99b4",
-    "values": []
-  };
 
-  multiBar = [
-    {
-      "key": "Relevant",
-      "values": []
-    },
-    {
-      "key": "Irrelevant",
-      "values": []
-    },
-    {
-      "key": "Total",
-      "values": []
-    }
-  ];
+  authors = ['authors'];
+  totalMessages = ['Total'];
+  relevantMessages = ['Relevants'];
+  irrelevantMessages = ['Irrelevants'];
 
   d3.json("https://raw.githubusercontent.com/jjsebasv/infovis/gh-pages/tpe-personal/data.json", function(json) {
     for (var data in json) {
       aux = {
-        "author": data,
+        "Author": data,
         "relevant": 0,
         "irrelevant": 0,
         "total": 0
@@ -47,79 +27,76 @@ $( document ).ready(function() {
         if ($(this)[0].relevant) {
           aux.relevant ++;
         } else {
-          aux.irrelevant ++;
+          aux.irrelevant --;
         };
         aux.total ++;
       });
+
+      authors.push(data);
+      totalMessages.push(aux.total);
+      relevantMessages.push(aux.relevant);
+      irrelevantMessages.push(-aux.irrelevant);
+
       relevancy.push(aux);
 
-      relevants.values.push({
-        "label": data,
-        "value": aux.relevant
-      });
-      irrelevants.values.push({
-        "label": data,
-        "value": aux.irrelevant
-      });
-
-      multiBar[0].values.push({
-        "label": data,
-        "value": aux.relevant
-      });
-      multiBar[1].values.push({
-        "label": data,
-        "value": - aux.irrelevant
-      });
-
     };
+
+    chart = generateStackedBarFromJson(
+      relevancy,
+      'stacked-bar',
+      'Author',
+      ['total', 'relevant', 'irrelevant'],
+      ['relevant', 'irrelevant']
+    );
+    
     console.log(relevancy);
-    doubleBar = [relevants, irrelevants];
-    svgFunction(relevancy);
-    //getJson(doubleBar);
-    nv.addGraph(function() {
-      var chart = nv.models.discreteBarChart()
-          .x(function(d) { return d.label })    //Specify the data accessors.
-          .y(function(d) { return d.value })
-          .staggerLabels(true)    //Too many bars and not enough room? Try staggering labels.
-          .showValues(true)       //...instead, show the bar value right on top of each bar.
-          ;
-      chart.tooltip.enabled();
 
-      d3.select('#chart1 svg')
-          .datum(multiBar)
-          .call(chart);
-
-      nv.utils.windowResize(chart.update);
-
-      return chart;
+    $('#name').click( function() {
+      chart.load({
+        json: sortByName(relevancy),
+        keys: {
+          x: 'Author', // it's possible to specify 'x' when category axis
+          value: ['total', 'relevant', 'irrelevant']
+        },
+        groups: ['relevant', 'irrelevant'],  
+      });
     });
+
+    $('#total').click( function() {
+      chart.load({
+        json: sortByTotal(relevancy),
+        keys: {
+          x: 'Author', // it's possible to specify 'x' when category axis
+          value: ['total', 'relevant', 'irrelevant']
+        },
+        groups: ['relevant', 'irrelevant'],  
+      });
+    });
+
+    $('#relevant').click( function() {
+      chart.load({
+        json: sortByRelevant(relevancy),
+        keys: {
+          x: 'Author', // it's possible to specify 'x' when category axis
+          value: ['total', 'relevant', 'irrelevant']
+        },
+        groups: ['relevant', 'irrelevant'],  
+      });
+    });
+
+    $('#irrelevant').click( function() {
+      chart.load({
+        json: sortByIrrelevant(relevancy),
+        keys: {
+          x: 'Author', // it's possible to specify 'x' when category axis
+          value: ['total', 'relevant', 'irrelevant']
+        },
+        groups: ['relevant', 'irrelevant'],  
+      });
+    });
+
   });
 
-/*
-  d3.json('https://raw.githubusercontent.com/jjsebasv/infovis/gh-pages/tpe-personal/relevancy.json', function(data) {
-    nv.addGraph(function() {
-      var chart = nv.models.multiBarHorizontalChart()
-          .x(function(d) { return d.label })
-          .y(function(d) { return d.value })
-          .margin({top: 30, right: 20, bottom: 50, left: 175})
-          .showValues(true)           //Show bar value next to each bar.
-          .tooltips(true)             //Show tooltips on hover.
-          .showControls(true)         //Allow user to switch between "Grouped" and "Stacked" mode.
-          .width(500)
-          .height(900);
-
-      chart.yAxis
-          .tickFormat(d3.format(',.2f'));
-
-      d3.select('#chart1 svg')
-          .datum(data)
-          .call(chart);
-
-      nv.utils.windowResize(chart.update);
-      return chart;
-    });
-  });
-*/
   var svgFunction = function(my_dataset){
     var svgTitles = d3.select(".svg-container").append("svg").classed("opinion-titles", true).attr("width", 300).attr("height", 800).attr("text-anchor", "end");
     var svgBars = d3.select(".svg-container").append("svg").classed("opinion-bars", true).attr("width", 150).attr("height", 800);
@@ -167,9 +144,9 @@ $( document ).ready(function() {
       .attr("y", function(d,i) { return 10+i*30});
 
     });
+  };
 
-
-  }
-
+  generateGauge(['data', 55.8], 'gauge');
+  //generateStackedBar(['giladitas', 'aa', 'bb'], [['label',10,20], ['otroLabel',50,30]]  ,[], 'stacked-bar');
 
 });
