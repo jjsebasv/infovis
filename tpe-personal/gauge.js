@@ -7,7 +7,7 @@ $( document ).ready(function() {
                     dataset
                 ],
                 type: 'gauge',
-                onclick: function (d, i) { console.log("onclick", d, i); },
+                onclick: function (d, i) { console.log("onclick", d.ratio, i); },
                 onmouseover: function (d, i) { console.log("onmouseover", d, i); },
                 onmouseout: function (d, i) { console.log("onmouseout", d, i); }
             },
@@ -37,5 +37,13 @@ $( document ).ready(function() {
             }
         });
         return chart;
+    };
+
+    fillGauge = function(dataset, gauge) {
+        gauge.load({
+            columns: [
+              ['Average of Irrelevancy', dataset]
+            ]
+      });
     };
 });

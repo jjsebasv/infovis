@@ -5,25 +5,66 @@
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script src="nvd3.js" charset="utf-8"></script>
   <script src="c3.js" charset="utf-8"></script>
+  <script src="pie-chart.js" charset="utf-8"></script>
   <script src="gauge.js" charset="utf-8"></script>
   <script src="stacked-bar.js" charset="utf-8"></script>
   <script src="sorter.js" charset="utf-8"></script>
   <script src="application.js" charset="utf-8"></script>
   <link rel="stylesheet" type="text/css" href="css/nvd3.css">
   <link rel="stylesheet" type="text/css" href="css/c3.css">
+  <link rel="stylesheet" type="text/css" href="css/application.css">
   <body>
-    <div id="gauge">
-      <svg></svg>
+    <div class="main-wrapper">
+      <h1 class="main-title">
+        Sebastian Vera's Personal Project
+      </h1>
+      <p class="main-information">
+        This is a personal data project that shows the amount of messages involved in a average week in the Whatsapp Debate group.
+      </p>
     </div>
-    <div id="stacked-bar">
-      <svg></svg>
+    <h3 class="pie-title">
+      Amount of Relevant & Irrelevant messages
+    </h3>
+    <div id="piechart">
+        <svg></svg>
     </div> 
+    <div class="wrapper">
+      <h3 class="graph-title">
+        Graph of messages per participant
+      </h3>
+      <h3 class="gauge-title">
+        Gauge of irrelevancy
+      </h3>
+      <div class="bars" id="stacked-bar">
+        <svg></svg>
+      </div> 
+      <div class="gauge" id="gauge">
+        <svg></svg>
+      </div>
+    </div>
     <div class="group-button">
-      <button id="name"> Sort By Name </button>
+      <button id="average"> Sort By Average of Irrelevancy </button>
       <button id="total"> Sort By Total </button>
       <button id="relevant"> Sort By Relevancy </button>
       <button id="irrelevant"> Sort By Irrelevancy </button>
     </div>
-
+    <div class="footer-wrapper">
+      <div class="personal-title">
+        <h4>
+          J. Sebastián Vera ©️ 2016
+        </h4>
+      </div>
+      <div class="designed-with-love">
+        <h6>
+          designed with love
+        </h6>
+        <h6>
+          by Sebastián
+        </h6>
+        <h6>
+          2016
+        </h6>
+      </div>
+    </div>
   </body>
 </html>

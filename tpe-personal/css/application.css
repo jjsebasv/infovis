@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+.main-wrapper {
+	border-bottom: 3px solid rgba(255, 104, 1, 0.8);
+	margin: 10px auto;
+	text-align: center;
+	padding: 0 45px;
+	width: 75%;
+}
+
+.pie-title {
+	text-align: center;
+}
+
+.wrapper {
+	text-align: center;
+	width: 100%;
+}
+
+.wrapper .bars, .wrapper .graph-title {
+	display: inline-block;
+	vertical-align: middle;
+	width: 85%;
+}
+
+.wrapper .gauge, .wrapper .gauge-title {
+	display: inline-block;
+	vertical-align: middle;
+	width: 14%;
+}
+
+.group-button {
+	margin: 10px;
+	text-align: center;
+}
+
+.group-button button {
+  background-color: rgba(255, 104, 1, 0.8);
+  border: 1px solid rgba(255, 104, 1, 0.8);
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  height: auto;
+  margin: 5px;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.group-button button:hover {
+	background-color: #fff;
+	color: rgba(255, 104, 1, 1);
+}
+
+.footer-wrapper {
+	background-color: #553A24;
+	color: #fff;
+	font-family: 'Shadows Into Light', cursive;
+	text-align: center;
+	width: 100%;
+}
+
+.personal-title, .designed-with-love {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.designed-with-love * {
+  margin: 5px 25px;
+  width: 100%;
+}

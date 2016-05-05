@@ -8,10 +8,10 @@ $( document ).ready(function() {
 	    return 0;
 	};
 
-	function name(a,b) {
-	  if (a.author > b.author)
+	function average(a,b) {
+	  if (a.averageOfIrrelevancy > b.averageOfIrrelevancy)
 	    return -1;
-	  else if (a.author < b.author)
+	  else if (a.averageOfIrrelevancy < b.averageOfIrrelevancy)
 	    return 1;
 	  else 
 	    return 0;
@@ -35,8 +35,8 @@ $( document ).ready(function() {
 	    return 0;
 	}
 
-	sortByName = function(objs) {
-		return objs.sort(name);
+	sortByAverage = function(objs) {
+		return objs.sort(average);
 	};
 
 	sortByTotal = function(objs) {

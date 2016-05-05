@@ -39,11 +39,7 @@ $( document ).ready(function() {
     return chart
   };
 
-  printGilada = function(chart) {
-    console.log(chart.data.axes());
-  };
-
-  generateStackedBarFromJson = function(dataset, container, x_axis, displayed_values, grouped) {
+  generateStackedBarFromJson = function(dataset, container, x_axis, displayed_values, grouped, extraLine, gauge) {
     var chart = c3.generate({
       data: {
         json: dataset,
@@ -53,6 +49,10 @@ $( document ).ready(function() {
           value: displayed_values
         },
         groups: [grouped],
+        selection: {
+          grouped: true
+        },
+        onclick: function (d, i) { fillGauge(getAverage(dataset,this.internal.config.axis_x_categories[d.x]), gauge); }
       },
       size: {
         height: 600
@@ -73,7 +73,18 @@ $( document ).ready(function() {
         enabled: true
       }
     });
+    chart.load({
+      columns: [
+        extraLine
+      ],
+      type: 'line'
+    });
     return chart;
+  };
+
+  getAverage = function(array, x) {
+    var result = $.grep(array, function(e){ return e.Author == x; });
+    return result[0].averageOfIrrelevancy;
   };
 
 

@@ -11,8 +11,9 @@ $( document ).ready(function() {
 
   authors = ['authors'];
   totalMessages = ['Total'];
-  relevantMessages = ['Relevants'];
-  irrelevantMessages = ['Irrelevants'];
+  relevantMessages = [];
+  irrelevantMessages = [];
+  averageOfIrrelevancy = ['Average of Irrelevancy'];
 
   d3.json("https://raw.githubusercontent.com/jjsebasv/infovis/gh-pages/tpe-personal/data.json", function(json) {
     for (var data in json) {
@@ -20,7 +21,8 @@ $( document ).ready(function() {
         "Author": data,
         "relevant": 0,
         "irrelevant": 0,
-        "total": 0
+        "total": 0,
+        "averageOfIrrelevancy": 0
       };
 
       $.each(json[data].messages, function(){
@@ -31,67 +33,111 @@ $( document ).ready(function() {
         };
         aux.total ++;
       });
+      aux.averageOfIrrelevancy = ((-aux.irrelevant/aux.total)*100);
 
       authors.push(data);
       totalMessages.push(aux.total);
       relevantMessages.push(aux.relevant);
       irrelevantMessages.push(-aux.irrelevant);
+      averageOfIrrelevancy.push(aux.averageOfIrrelevancy );
 
       relevancy.push(aux);
 
     };
 
+    gauge = generateGauge(['Average of Irrelevancy', 0], 'gauge');    
+
     chart = generateStackedBarFromJson(
       relevancy,
       'stacked-bar',
       'Author',
-      ['total', 'relevant', 'irrelevant'],
-      ['relevant', 'irrelevant']
+      ['relevant', 'irrelevant', 'total'],
+      ['relevant', 'irrelevant'],
+      averageOfIrrelevancy,
+      gauge
     );
-    
-    console.log(relevancy);
 
-    $('#name').click( function() {
+    pie = generatePieChart(
+      [
+        ["Relevants"].concat(relevantMessages.reduce(function(pv, cv) { return pv + cv; }, 0)), 
+        ["Irrelevants"].concat(irrelevantMessages.reduce(function(pv, cv) { return pv + cv; }, 0))
+      ],
+      'piechart'
+    );
+
+    $('#average').click( function() {
+      sorted = sortByAverage(relevancy);
+      sortedAverage = ["Average of Irrelevancy"].concat(sorted.map(function(obj){return obj.averageOfIrrelevancy}));
       chart.load({
-        json: sortByName(relevancy),
+        json: sorted,
         keys: {
           x: 'Author', // it's possible to specify 'x' when category axis
           value: ['total', 'relevant', 'irrelevant']
         },
         groups: ['relevant', 'irrelevant'],  
+      });
+      chart.load({
+        columns: [
+          sortedAverage
+        ],
+        type: 'line'
       });
     });
 
     $('#total').click( function() {
+      sorted = sortByTotal(relevancy);
+      sortedAverage = ["Average of Irrelevancy"].concat(sorted.map(function(obj){return obj.averageOfIrrelevancy}));
       chart.load({
-        json: sortByTotal(relevancy),
+        json: sorted,
         keys: {
           x: 'Author', // it's possible to specify 'x' when category axis
           value: ['total', 'relevant', 'irrelevant']
         },
         groups: ['relevant', 'irrelevant'],  
+      });
+      chart.load({
+        columns: [
+          sortedAverage
+        ],
+        type: 'line'
       });
     });
 
     $('#relevant').click( function() {
+      sorted = sortByRelevant(relevancy);
+      sortedAverage = ["Average of Irrelevancy"].concat(sorted.map(function(obj){return obj.averageOfIrrelevancy}));
       chart.load({
-        json: sortByRelevant(relevancy),
+        json: sorted,
         keys: {
           x: 'Author', // it's possible to specify 'x' when category axis
           value: ['total', 'relevant', 'irrelevant']
         },
         groups: ['relevant', 'irrelevant'],  
       });
+      chart.load({
+        columns: [
+          sortedAverage
+        ],
+        type: 'line'
+      });
     });
 
     $('#irrelevant').click( function() {
+      sorted = sortByIrrelevant(relevancy);
+      sortedAverage = ["Average of Irrelevancy"].concat(sorted.map(function(obj){return obj.averageOfIrrelevancy}));
       chart.load({
-        json: sortByIrrelevant(relevancy),
+        json: sorted,
         keys: {
           x: 'Author', // it's possible to specify 'x' when category axis
           value: ['total', 'relevant', 'irrelevant']
         },
         groups: ['relevant', 'irrelevant'],  
+      });
+      chart.load({
+        columns: [
+          sortedAverage
+        ],
+        type: 'line'
       });
     });
 
@@ -146,7 +192,7 @@ $( document ).ready(function() {
     });
   };
 
-  generateGauge(['data', 55.8], 'gauge');
+  
   //generateStackedBar(['giladitas', 'aa', 'bb'], [['label',10,20], ['otroLabel',50,30]]  ,[], 'stacked-bar');
 
 });
